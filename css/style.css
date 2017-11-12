@@ -1,0 +1,151 @@
+/* Общие стили */
+
+body {
+    background-color: #192431;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+#footer {
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:stretch;
+    margin: 0 7%;
+}
+
+#footer__left-block, #footer__right-block {
+    flex: 1 300px;
+    min-width: 0;
+    padding: 200px 20px 0 20px;
+    margin: 0 3%;
+}
+
+.footer__heading {
+    font-family: "Open Sans Semibold";
+    font-size: 13px;
+}
+
+.footer__text, li {
+    font-family: "Open Sans";
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* Левый блок */
+
+#footer__menu {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:stretch;
+    margin-top: 50px;
+}
+
+#footer__menu--left {
+    flex-basis: 33%;
+}
+
+#footer__menu--center {
+    flex-basis: 33%;
+}
+
+#footer__menu--right {
+    flex-basis: 33%;
+}
+
+/* Правый блок */
+
+#footer__callback-area {
+    height: 40px;
+    width: 90%;
+}
+
+#footer__callback-link {
+    background-color: #82ca9c;
+    position: relative;
+    margin-left: -51px;
+    margin-top: 10px;
+    padding: 12px 12px 15px 12px;
+}
+
+#footer__image-check {
+    position: relative;
+    top: 5px;
+}
+
+#footer__text--grey {
+    color: #57697f;
+    width: 300px;
+}
+
+/*  Медиа запросы */
+
+@media screen and (max-width:1099px) {
+
+    #footer__menu {
+        flex-direction: column;
+    }
+
+    #footer__left-block, #footer__right-block {
+        padding: 50px 20px 0 20px;
+    }
+
+}
+
+@media screen and (max-width:899px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #footer__menu {
+         flex-direction: row;
+    }
+
+    #footer {
+        flex-wrap:wrap;
+    }
+
+    #footer__left-block, #footer__right-block {
+        padding: 30px 20px;
+    }
+
+}
+
+@media screen and (max-width:549px) {
+
+    #footer__menu {
+        flex-direction: column;
+    }
+
+    #footer__text--grey {
+        width: 200px;
+    }
+
+}
+
